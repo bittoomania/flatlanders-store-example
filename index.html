@@ -36,7 +36,34 @@
 							</ul>
 						</div>
 						<!-- End: Image Gallery -->
-						<p>{{product.description}}</p>
+
+						<!-- Tabs -->
+						<section class="tab" ng-controller="TabsController as tab">
+							<ul class="nav nav-pills">
+								<li ng-class="{'active':tab.isSet(1)}">
+									<a ng-click="tab.setTab(1)">Description</a>
+								</li>
+								<li ng-class="{'active':tab.isSet(2)}">
+									<a ng-click="tab.setTab(2)">Specs</a>
+								</li>
+								<li ng-class="{'active':tab.isSet(3)}">
+									<a ng-click="tab.setTab(3)">Reviews</a>
+								</li>
+							</ul>
+
+							<div ng-show="tab.isSet(1)">
+								<h4>Description</h4>
+								<blockquote>{{product.description}}</blockquote>
+							</div>
+							<div ng-show="tab.isSet(2)">
+								<h4>Specs</h4>
+								<blockquote>Shine: {{product.shine}}</blockquote>
+							</div>
+							<div ng-show="tab.isSet(3)">
+								<h4>Reviews</h4>
+							</div>
+						</section>
+						<!-- End: Tabs -->
 						<button ng-show="product.canPurchase">Add to Cart</button>
 					</div>
 				</div>

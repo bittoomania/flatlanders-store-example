@@ -7,3 +7,15 @@ app.controller('StoreController',['$http', function($http) {
 		store.products = data;
 	});
 }]);
+
+app.controller('TabsController', function() {
+	this.tab = 1;
+
+	this.setTab = function(number) {
+		this.tab = number;
+	}
+
+	this.isSet = function(number) {
+		return this.tab == number;
+	}
+});
