@@ -19,3 +19,23 @@ app.controller('TabsController', function() {
 		return this.tab == number;
 	}
 });
+
+app.controller('GalleryController', function() {
+	this.current = 0;
+
+	this.setCurrent = function(value) {
+		if(value !== null)
+			this.current = value;
+		else
+			this.current = 0;
+	}
+});
+
+app.controller('ReviewController', function() {
+	this.review = {};
+
+	this.addReview = function(product) {
+		product.reviews.push(this.review);
+		this.review = {};
+	};
+});
