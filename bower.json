@@ -1,0 +1,25 @@
+{
+  "name": "flatlanders-store",
+  "version": "0.0.1",
+  "authors": [
+    "Abdullah <abdullah09.65@gmail.com>"
+  ],
+  "description": "Flatlander's store example from code school angular tutorial",
+  "keywords": [
+    "angular",
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "angular": "~1.3.13"
+  }
+}
