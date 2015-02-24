@@ -13,3 +13,14 @@ ul.nav-pills a {
 .ng-valid.ng-dirty {
   border-color : green;
 }
+.gallery {
+	text-align: center;
+	width: 230px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.small-img {
+	width: 50px;
+	margin: 15px 10px 15px;
+	cursor: pointer;
+}
